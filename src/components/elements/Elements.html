@@ -1,6 +1,29 @@
 <div>
     <h1>lista de elementos:</h1>
-    <table>
-        <ElementComponent></ElementComponent>
+    <table class="table">
+        <tr>
+            <th>atomicNumber</th>
+            <th>symbol</th>
+            <th>name</th>
+            <th>atomicMass</th>
+            <th>atomicRadius</th>
+            <th>boilingPoint</th>
+            <th>bondingType</th>
+            <th>cpkHexColor</th>
+            <th>density</th>
+            <th>electronAffinity</th>
+            <th>electronegativity</th>
+            <th>electronicConfiguration</th>
+            <th>groupBlock</th>
+            <th>ionRadius</th>
+            <th>ionizationEnergy</th>
+            <th>meltingPoint</th>
+            <th>oxidationStates</th>
+            <th>standardState</th>
+            <th>vanDelWaalsRadius</th>
+            <th>yearDiscovered</th>
+        </tr>
+        <ElementComponent v-for='element in elements' :oneElement='element':key='element.symbol'></ElementComponent>
+
     </table>
 </div>

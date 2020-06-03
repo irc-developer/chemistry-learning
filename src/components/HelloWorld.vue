@@ -68,7 +68,9 @@
       </li>
     </ul>
     <table>
-      <ElementComponent></ElementComponent>
+      <tbody>
+        <ElementComponent></ElementComponent>
+      </tbody>
     </table>
   </div>
 </template>

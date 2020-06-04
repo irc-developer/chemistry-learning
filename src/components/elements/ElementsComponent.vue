@@ -2,8 +2,7 @@
 
 
 <script>
-   const ELEMENTS_API_URL = 'https://neelpatel05.pythonanywhere.com/'
-   import ElementComponent from "../element/ElementComponent.vue";
+   const ELEMENTS_API_URL = 'https://neelpatel05.pythonanywhere.com/' 
    import Element from "../../models/Element.js";
    import axios from 'axios';
    //import util from '../../utils/util.js';
@@ -11,7 +10,7 @@
    export default {
       name: 'ElementsComponent',
       components: {
-          ElementComponent
+          
       },
       props: {
                  

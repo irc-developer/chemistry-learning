@@ -2,6 +2,7 @@
     <h1>lista de elementos:</h1>
     <table class="table">
         <tr>
+            <th>#</th>
             <th>atomicNumber</th>
             <th>symbol</th>
             <th>name</th>
@@ -23,7 +24,30 @@
             <th>vanDelWaalsRadius</th>
             <th>yearDiscovered</th>
         </tr>
-        <ElementComponent v-for='element in elements' :oneElement='element':key='element.symbol'></ElementComponent>
+        <tr v-for='element in elements' :key='element.symbol' >
+           <button type="button" class="btn btn-primary" ></button>
+            <td>{{ element.atomicNumber }}</td>
+            <td>{{ element.symbol }}</td>
+            <td>{{ element.name }}</td>
+            <td>{{ element.atomicMass }}</td>
+            <td>{{ element.atomicRadius }}</td>
+            <td>{{ element.boilingPoint }}</td>
+            <td>{{ element.bondingType }}</td>
+            <td>{{ element.cpkHexColor }}</td>
+            <td>{{ element.density }}</td>
+            <td>{{ element.electronAffinity }}</td>
+            <td>{{ element.electronegativity }}</td>
+            <td>{{ element.electronicConfiguration }}</td>
+            <td>{{ element.groupBlock }}</td>
+            <td>{{ element.ionRadius }}</td>
+            <td>{{ element.ionizationEnergy }}</td>
+            <td>{{ element.meltingPoint }}</td>
+            <td>{{ element.oxidationStates }}</td>
+            <td>{{ element.standardState }}</td>
+            <td>{{ element.vanDelWaalsRadius }}</td>
+            <td>{{ element.yearDiscovered }}</td>
+        </tr>
+        
 
     </table>
 </div>

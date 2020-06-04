@@ -34,7 +34,8 @@
             
       },
       mounted() {
-            axios.get(ELEMENTS_API_URL).then(
+           //Podría usar await para recoger el valor del result pero imagino que usando el then (promesa) funciona igual de bie,
+           axios.get(ELEMENTS_API_URL).then(
                 (result) => {
                     var listOfElementsFromJSON = result.data;
                     for (var i = 0; i < listOfElementsFromJSON.length; i++) {
@@ -43,7 +44,7 @@
                         this.elements.push(elementObject);
                     }
                 }
-            )
+            ).catch((error) => { alert("Elements API is not working. Error: " & error) })
             
       },
       updated() {

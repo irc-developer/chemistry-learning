@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <table>
+    <table class="table table-bordered table-hovered table-striped">
       <tbody>
         <ElementsComponent></ElementsComponent>
       </tbody>

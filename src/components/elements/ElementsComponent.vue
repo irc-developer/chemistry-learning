@@ -18,10 +18,25 @@
       },
       data() {
              return { 
-                  elements: []
+                  elements: [],
+                  
+                  elementName: ""
              }
       },
       methods: {
+          filterElements: function() {
+              console.log(this.elementName)
+                var elName = this.elementName;
+               
+              console.log(this.elements.filter( function (el) {
+                  return el.name.includes(elName);
+                    })
+              );
+               
+          },
+          buttonEvent: function(button) {
+              console.log(button);
+          }
             
       },
       filters: {

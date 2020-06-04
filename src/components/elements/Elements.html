@@ -1,5 +1,8 @@
 <div>
     <h1>lista de elementos:</h1>
+    <div>
+        <label for="filter">Filter:</label><input type="text" id="filter" v-model="elementName" v-on:keyup="filterElements">
+    </div>
     <table class="table">
         <tr>
             <th>#</th>
@@ -24,8 +27,8 @@
             <th>vanDelWaalsRadius</th>
             <th>yearDiscovered</th>
         </tr>
-        <tr v-for='element in elements' :key='element.symbol' >
-           <button type="button" class="btn btn-primary" ></button>
+        <tr v-for='element in elements' :key='element.symbol'>
+           <button type="button" class="btn btn-primary" v-on:click= "buttonEvent(element.symbol)">View</button>
             <td>{{ element.atomicNumber }}</td>
             <td>{{ element.symbol }}</td>
             <td>{{ element.name }}</td>

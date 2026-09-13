@@ -2,7 +2,7 @@
   <div class="hello">
     <table class="table table-bordered table-hovered table-striped">
       <tbody>
-        <ElementsComponent></ElementsComponent>
+        <ElementsComponent />
       </tbody>
     </table>
   </div>
@@ -13,9 +13,6 @@ import ElementsComponent from "./elements/ElementsComponent.vue";
 
 export default {
   name: "MainComponent",
-  props: {
-    msg: String
-  },
   components: {
     ElementsComponent
   }

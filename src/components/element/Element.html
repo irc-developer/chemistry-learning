@@ -1,4 +1,4 @@
-<div>
+<div v-if="elementClass">
     {{ elementClass.atomicNumber }}
     {{ elementClass.symbol }}
     {{ elementClass.name }}
@@ -20,3 +20,4 @@
     {{ elementClass.vanDelWaalsRadius }}
     {{ elementClass.yearDiscovered }}
 </div>
+<div v-else>Loading element...</div>
